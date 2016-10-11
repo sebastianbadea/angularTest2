@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<!--ng-app is signaling that angular can interpred this part of DOM-->
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="githubViewer">
+<head>
+    <title>first page with angular</title>
+    <script src="scripts/libs/angular.min.js"></script>
+    <script src="scripts/proj/index.js"></script>
+</head>
+<!--with ng-controller is identified the desired controller that handles the node-->
+<body ng-controller="MainController">
+    <div>
+        Name: {{user.name}}
+    </div>
+    <div>
+        <img ng-src="{{user.avatar_url}}" />
+    </div>
+</body>
+</html>
