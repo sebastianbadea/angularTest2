@@ -1,0 +1,18 @@
+﻿<!--with 'ng-controller' is identified the desired controller that handles the DOM node-->
+<!--the controller can be set with 'ng-controller' directive direct from html(ex. ng-controller="mainController") or with routing; here is with routing-->
+<body >
+    <!--the 'ng-submit, ng-click' directives can be used for click on submit buttons -->
+    <form name="searchUser" ng-submit="search()">
+        <!--'ng-model' can be used for setting bidirectional sync between view and model; it can be used with textbox, textarea, etc.-->
+        <input type="search" placeholder="user to search" required ng-model="username" />
+        <input type="submit" name="search" />
+    </form>
+    <!--'ng-show/ng-hide' displays or hides html based on the evaluation of the expression-->
+    <!--html pieces can be reused with 'ng-include'; this is somehow equivalent to partial views-->
+    <!--when specify a file, it has to be inside quotes; otherwise angular will try to interpret as a function-->
+    <!--the html pieces can be included with 'ng-include' or through routing-->
+    <!--<div ng-include="'user.html'" ng-show="user"></div>
+    <div ng-hide="user">
+        {{error}}
+    </div>-->
+</body>

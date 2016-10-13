@@ -59,6 +59,8 @@
   <ItemGroup>
     <Content Include="content\images\descărcare.png" />
     <Content Include="content\images\ionic.jpg" />
+    <Content Include="html\main.html" />
+    <Content Include="html\repo.html" />
     <Content Include="package.json" />
     <Content Include="scripts\libs\angular-route.js" />
     <Content Include="scripts\libs\angular-route.min.js" />
@@ -73,10 +75,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="scripts\libs\angular.min.js" />
+    <Content Include="scripts\proj\app.js" />
     <Content Include="scripts\proj\github.js" />
-    <Content Include="scripts\proj\index.js" />
-    <Content Include="html\test1.html" />
-    <Content Include="html\userDetails.html" />
+    <Content Include="scripts\proj\mainController.js" />
+    <Content Include="html\index.html" />
+    <Content Include="html\user.html" />
+    <Content Include="scripts\proj\repoController.js" />
+    <Content Include="scripts\proj\userController.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

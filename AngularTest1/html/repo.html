@@ -1,0 +1,27 @@
+﻿<h2>{{repo.name}}</h2>
+<div>
+    Issues: {{repo.open_issues_count}}
+</div>
+
+<div>
+    Contributors:
+    <table>
+        <thead>
+            <tr>
+                <td>image</td>
+                <td>login</td>
+                <td>contributions</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="contributor in repo.contributors">
+                <td><img style="width: 15%; height: 15%" ng-src="{{contributor.avatar_url}}" /></td>
+                <td>{{contributor.login}}</td>
+                <td>{{contributor.contributions}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<a href="#/user/{{repo.owner.login}}">Back to {{repo.owner.login}}</a>
+<a href="#/main">back to search</a>
