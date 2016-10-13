@@ -1,0 +1,27 @@
+﻿<h2> {{user.name}}</h2>
+<!--using 'ng-src' to wait for the url; it the regular 'src' is used, the url will be undefined because the binding won't work from the start-->
+<img style="width: 15%; height: 15%" ng-src="{{user.avatar_url}}" />
+<div>
+    Order:
+    <select ng-model="sortOrder">
+        <option value="+name">Name</option>
+        <option value="-language">Language</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--the 'ng-repeat' directive has a syntax like the 'foreach' in c#-->
+            <!--a couple of filters can be added in the 'ng-repeat'; below is 'orderby'-->
+            <tr ng-repeat="repo in repos | orderBy: sortOrder">
+                <td>{{repo.name}}</td>
+                <td>{{repo.language}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
