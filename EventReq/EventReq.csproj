@@ -57,6 +57,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\app.css" />
+    <Content Include="scripts\proj\app.js" />
+    <Content Include="scripts\proj\directives.js" />
+    <Content Include="scripts\proj\filters.js" />
     <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -67,15 +71,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\bootstrap.css" />
-    <Content Include="js\lib\angular.js" />
-    <Content Include="js\lib\bootstrap.js" />
+    <Content Include="scripts\libs\angular.js" />
+    <Content Include="scripts\libs\bootstrap.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\proj\controllers\" />
+    <Folder Include="scripts\proj\controllers\" />
+    <Folder Include="scripts\proj\services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
