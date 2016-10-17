@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularTest1", "AngularTest1\AngularTest1.csproj", "{B8EDA854-364E-4575-81F4-CA250CE000EF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventReq", "EventReq\EventReq.csproj", "{57973D69-442A-4943-BB24-8F25F3E34747}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B8EDA854-364E-4575-81F4-CA250CE000EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8EDA854-364E-4575-81F4-CA250CE000EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8EDA854-364E-4575-81F4-CA250CE000EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57973D69-442A-4943-BB24-8F25F3E34747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57973D69-442A-4943-BB24-8F25F3E34747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57973D69-442A-4943-BB24-8F25F3E34747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57973D69-442A-4943-BB24-8F25F3E34747}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
