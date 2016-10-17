@@ -57,8 +57,15 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="content\images\banner-angularjs.jpg" />
+    <Content Include="content\images\descărcare.png" />
+    <Content Include="content\images\ionic.jpg" />
     <Content Include="css\app.css" />
+    <Content Include="html\eventDetails.html" />
+    <Content Include="html\newEvent.html" />
     <Content Include="scripts\proj\app.js" />
+    <Content Include="scripts\proj\controllers\eventController.js" />
+    <Content Include="scripts\proj\controllers\editEventController.js" />
     <Content Include="scripts\proj\directives.js" />
     <Content Include="scripts\proj\filters.js" />
     <Content Include="package.json" />
@@ -73,15 +80,13 @@
     <Content Include="css\bootstrap.css" />
     <Content Include="scripts\libs\angular.js" />
     <Content Include="scripts\libs\bootstrap.js" />
+    <Content Include="scripts\proj\services\eventDataService.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="scripts\proj\controllers\" />
-    <Folder Include="scripts\proj\services\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
