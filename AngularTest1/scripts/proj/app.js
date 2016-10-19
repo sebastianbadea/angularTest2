@@ -9,20 +9,21 @@
     //before parameters the url must end with '/'
     //the controller has to be set to a valid controller that has been added to the current module; it's not the js file name
     //also, the js files which contain controllers must be referenced in the html file; it's not like with requireJs
-    app.config(function ($routeProvider) {
+    app.config(function ($routeProvider, $locationProvider) {
         $routeProvider.when('/main', {
-            templateUrl: 'main.html',
+            templateUrl: 'html/main.html',
             controller: 'mainController'
         })
         .when('/user/:username', {
-            templateUrl: 'user.html',
+            templateUrl: 'html/user.html',
             controller: 'userController'
         })
         .when('/repo/:username/:reponame', {
-            templateUrl: 'repo.html',
+            templateUrl: 'html/repo.html',
             controller: 'repoController'
         })
-        .otherwise({redirectTo: '/main'});
+        .otherwise({ redirectTo: '/main' });
+        $locationProvider.html5Mode(true);
     });
 
 }());

@@ -61,8 +61,10 @@
     <Content Include="content\images\descărcare.png" />
     <Content Include="content\images\ionic.jpg" />
     <Content Include="css\app.css" />
-    <Content Include="html\eventDetails.html" />
-    <Content Include="html\newEvent.html" />
+    <Content Include="scripts\libs\angular-route.js" />
+    <Content Include="templates\eventDetails.html" />
+    <Content Include="index.html" />
+    <Content Include="templates\newEvent.html" />
     <Content Include="scripts\proj\app.js" />
     <Content Include="scripts\proj\controllers\eventController.js" />
     <Content Include="scripts\proj\controllers\editEventController.js" />

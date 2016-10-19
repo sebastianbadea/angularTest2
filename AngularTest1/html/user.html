@@ -22,7 +22,9 @@
         <!--a couple of filters can be added in the 'ng-repeat'; below is 'orderby'-->
         <tr ng-repeat="repo in repos | orderBy: sortOrder">
             <td>
-                <a href="#repo/{{user.login}}/{{repo.name}}">
+                <!--this is one way to redirect; the other one is to use $location service-->
+                <!--the route and parameters must be specified in app.js-->
+                <a href="repo/{{user.login}}/{{repo.name}}">
                     {{repo.name}}
                 </a>
             </td>
@@ -31,4 +33,4 @@
     </tbody>
 </table>
 
-<a href="#/main">Back to search</a>
+<a href="main">Back to search</a>
